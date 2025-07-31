@@ -7,6 +7,12 @@ import Index from "./pages/Index";
 import Services from "./pages/Services";
 import PreWedding from "./pages/PreWedding";
 import Candid from "./pages/Candid";
+import Destination from "./pages/Destination";
+import Teaser from "./pages/Teaser";
+import Anniversary from "./pages/Anniversary";
+import Birthday from "./pages/Birthday";
+import Wedding from "./pages/Wedding";
+import Cinematic from "./pages/Cinematic";
 import NotFound from "./pages/NotFound";
 
 const queryClient = new QueryClient();
@@ -22,6 +28,12 @@ const App = () => (
           <Route path="/services" element={<Services />} />
           <Route path="/services/pre-wedding" element={<PreWedding />} />
           <Route path="/services/candid" element={<Candid />} />
+          <Route path="/services/destination" element={<Destination />} />
+          <Route path="/services/teaser" element={<Teaser />} />
+          <Route path="/services/anniversary" element={<Anniversary />} />
+          <Route path="/services/birthday" element={<Birthday />} />
+          <Route path="/services/wedding" element={<Wedding />} />
+          <Route path="/services/cinematic" element={<Cinematic />} />
           {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
           <Route path="*" element={<NotFound />} />
         </Routes>
